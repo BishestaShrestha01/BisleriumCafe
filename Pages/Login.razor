@@ -3,10 +3,14 @@
 @inject UserServices UserServices
 @inject ISnackbar Snackbar
 @inject NavigationManager NavManager
-
+<style> 
+    body {
+        background-color: skyblue;
+    }
+</style>
 <style>
     .login-container {
-        background-color: br;
+        background-color: whitesmoke;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,7 +27,7 @@
         width: 100%;
         padding: 10px;
         margin-bottom: 10px;
-        border: 1px solid #ddd;
+        border: 1px solid lightblue;
         border-radius: 4px;
         box-sizing: border-box;
     }
@@ -33,7 +37,7 @@
 
 <div class="px-6 py-5 d-flex justify-content-center">
     <div class="login-container">
-        <h2>Bislerium Cafe  </h2>
+        <h2>Bislerium café  </h2>
         <div class="login-form">
             <MudTextField @bind-Value="_username" Label="Username" Variant="Variant.Text"></MudTextField>
             <br>

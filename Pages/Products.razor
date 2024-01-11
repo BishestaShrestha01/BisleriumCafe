@@ -3,9 +3,14 @@
 @inject OrderServices OrderServices
 @inject ISnackbar Snackbar
 
-<nav class="navbar navbar-light bg-light mb-5">
+<style>
+    body {
+        background-color: skyblue;
+    }
+</style>
+<nav class="navbar navbar-light bg-skyblue mb-5">
     <div class="container-fluid">
-        <h3> Bislerium Coffee Menu</h3>
+        <h3> Bislerium café Menu</h3>
     </div>
 </nav>
 
@@ -75,12 +80,21 @@
 
     <DialogContent>
         <MudSelect T="string" Label="Add In" AnchorOrigin="Origin.BottomCenter" @bind-Value="_item.ProductType">
+            <MudSelectItem Value="@("Normal")" />
             <MudSelectItem Value="@("Chocolate")" />
             <MudSelectItem Value="@("Ginger")" />
             <MudSelectItem Value="@("Lemon")" />
             <MudSelectItem Value="@("Honey")" />
             <MudSelectItem Value="@("Ice-Cream")" />
             <MudSelectItem Value="@("Cinnamon")" />
+            <MudSelectItem Value="@("Matcha")" />
+            <MudSelectItem Value="@("Double Expresso")" />
+            <MudSelectItem Value="@("Coffee")" />
+            <MudSelectItem Value="@("Add-in")" />
+
+
+
+
 
         </MudSelect>
         <MudTextField @bind-Value="_item.ProductName" Label="Product Name" Variant="Variant.Text"></MudTextField>
